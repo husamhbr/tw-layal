@@ -10,5 +10,167 @@
   "author_email": "husam.hbr@gmail.com",
   "support_url": "",
   "repository": "https://github.com/husamhbr/tw-layal",
-  "components": []
+  "components": [
+    {
+      "title": "ليال — العرض المداري",
+      "icon": "sicon-album-photo",
+      "name": "layal-orbital-showcase",
+      "key": "adca0303-bd85-4557-bed3-2254445c5f0b",
+      "image": "https://cdn.salla.network/images/themes/default/placeholder.jpg",
+      "fields": [
+        {
+          "id": "featured_product",
+          "icon": "sicon-keyboard_arrow_down",
+          "type": "items",
+          "label": "المنتج الرئيسي",
+          "placeholder": "ابحث في قائمة المنتجات...",
+          "format": "dropdown-list",
+          "source": "products",
+          "options": [],
+          "required": true,
+          "selected": [],
+          "searchable": true,
+          "multichoice": false
+        },
+        {
+          "id": "featured_image",
+          "icon": "sicon-image-landscape",
+          "type": "string",
+          "format": "image",
+          "label": "صورة رئيسية بديلة",
+          "description": "صورة PNG أو WebP شفافة اختيارية للقطعة الرئيسية",
+          "required": false,
+          "value": ""
+        },
+        {
+          "id": "featured_alt",
+          "icon": "sicon-format-text-alt",
+          "type": "string",
+          "format": "text",
+          "label": "النص البديل للصورة الرئيسية",
+          "placeholder": "يُستخدم اسم المنتج عند تركه فارغاً",
+          "required": false,
+          "maxLength": 160,
+          "value": ""
+        },
+        {
+          "id": "orbit_products",
+          "icon": "sicon-box",
+          "type": "items",
+          "label": "منتجات المدار",
+          "placeholder": "اختر منتجات المدار...",
+          "format": "dropdown-list",
+          "source": "products",
+          "options": [],
+          "required": true,
+          "selected": [],
+          "searchable": true,
+          "multichoice": true,
+          "description": "اختر من ثلاث إلى ست قطع؛ سيُستخدم أول ستة منتجات فقط"
+        },
+        {
+          "id": "background_image",
+          "icon": "sicon-image-landscape",
+          "type": "string",
+          "format": "image",
+          "label": "صورة الخلفية الجوية",
+          "required": false,
+          "value": ""
+        },
+        {
+          "id": "background_color",
+          "icon": "sicon-color-palette",
+          "type": "string",
+          "format": "color",
+          "inputType": "color",
+          "label": "لون الخلفية",
+          "required": true,
+          "value": "#11151e"
+        },
+        {
+          "id": "accent_color",
+          "icon": "sicon-color-palette",
+          "type": "string",
+          "format": "color",
+          "inputType": "color",
+          "label": "لون الإبراز",
+          "description": "يُستخدم لخطوط المدار والتركيز والتوهج الهادئ",
+          "required": true,
+          "value": "#8ed1c7"
+        },
+        {
+          "id": "section_height",
+          "icon": "sicon-layout-grid",
+          "type": "number",
+          "label": "ارتفاع القسم على سطح المكتب",
+          "format": "slider",
+          "inputType": "range",
+          "required": true,
+          "minimum": 560,
+          "maximum": 900,
+          "step": 20,
+          "value": 720
+        },
+        {
+          "id": "rotation_speed",
+          "icon": "sicon-clock",
+          "type": "number",
+          "label": "مدة الدورة الكاملة بالثواني",
+          "format": "slider",
+          "inputType": "range",
+          "required": true,
+          "minimum": 20,
+          "maximum": 90,
+          "step": 1,
+          "value": 42
+        },
+        {
+          "id": "reverse_direction",
+          "icon": "sicon-clock",
+          "type": "boolean",
+          "label": "عكس اتجاه الدوران",
+          "format": "switch",
+          "required": false,
+          "value": false
+        },
+        {
+          "id": "enable_pointer_tilt",
+          "icon": "sicon-star",
+          "type": "boolean",
+          "label": "تفعيل ميلان المؤشر",
+          "description": "يعمل على أجهزة سطح المكتب ذات المؤشر الدقيق فقط",
+          "format": "switch",
+          "required": false,
+          "value": true
+        },
+        {
+          "id": "enable_drag",
+          "icon": "sicon-list",
+          "type": "boolean",
+          "label": "تفعيل سحب المدار",
+          "format": "switch",
+          "required": false,
+          "value": true
+        },
+        {
+          "id": "show_product_names",
+          "icon": "sicon-format-text-alt",
+          "type": "boolean",
+          "label": "إظهار أسماء المنتجات",
+          "format": "switch",
+          "required": false,
+          "value": true
+        },
+        {
+          "id": "show_interaction_hint",
+          "icon": "sicon-bell",
+          "type": "boolean",
+          "label": "إظهار تلميح التفاعل",
+          "format": "switch",
+          "required": false,
+          "value": true
+        }
+      ]
+    }
+  ]
 }
