@@ -1,14 +1,14 @@
 {
-    "name": {
-        "ar": "\u0644\u064a\u0627\u0644",
-        "en": "Layal"
-    },
-    "description": {
-        "ar": "",
-        "en": ""
-    },
-    "author_email": "husam.hbr@gmail.com",
-    "support_url": "",
-    "repository": "https://github.com/husamhbr/tw-layal",
-    "components": []
+  "name": {
+    "ar": "ليال",
+    "en": "Layal"
+  },
+  "description": {
+    "ar": "",
+    "en": ""
+  },
+  "author_email": "husam.hbr@gmail.com",
+  "support_url": "",
+  "repository": "https://github.com/husamhbr/tw-layal",
+  "components": []
 }
