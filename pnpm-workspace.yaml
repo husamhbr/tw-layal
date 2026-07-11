@@ -1,0 +1,3 @@
+allowBuilds:
+  '@salla.sa/twilight-bundles': true
+  esbuild: true
